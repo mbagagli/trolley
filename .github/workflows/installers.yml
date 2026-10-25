@@ -1,0 +1,158 @@
+name: Beta installers
+
+on:
+  workflow_dispatch:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: read
+
+concurrency:
+  group: installers-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  checks:
+    uses: ./.github/workflows/checks.yml
+    permissions:
+      contents: read
+
+  validate:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+          ref: ${{ github.sha }}
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npm run version:check
+      - run: npm run test:release
+      - name: Verify user-pushed release tag
+        if: github.ref_type == 'tag'
+        env:
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: node scripts/check-release-tag.mjs "$RELEASE_TAG"
+
+  build:
+    needs: [validate, checks]
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-22.04
+            name: linux-x64
+            args: --bundles appimage,deb
+            target: ''
+          - os: windows-latest
+            name: windows-x64
+            args: --bundles nsis --target x86_64-pc-windows-msvc
+            target: x86_64-pc-windows-msvc
+          - os: macos-latest
+            name: macos-arm64
+            args: --bundles dmg --target aarch64-apple-darwin --config .github/tauri.macos-beta.json
+            target: aarch64-apple-darwin
+          - os: macos-latest
+            name: macos-x64
+            args: --bundles dmg --target x86_64-apple-darwin --config .github/tauri.macos-beta.json
+            target: x86_64-apple-darwin
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 60
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+          ref: ${{ github.sha }}
+      - name: Install Linux build dependencies
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libwebkit2gtk-4.1-dev \
+            libayatana-appindicator3-dev librsvg2-dev patchelf \
+            xdg-utils libssl-dev pkg-config build-essential
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: dtolnay/rust-toolchain@89b12181fb390509a0842a86cc55eeb8eb928c1d # stable
+        with:
+          targets: ${{ matrix.target }}
+      - uses: swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6 # v2
+        with:
+          workspaces: src-tauri -> target
+          key: ${{ matrix.name }}
+      - run: npm ci
+      - name: Build platform beta packages
+        run: npm run tauri -- build --ci ${{ matrix.args }} -- --locked
+      - name: Retain installers for review
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: trolley-${{ matrix.name }}
+          retention-days: 14
+          if-no-files-found: error
+          path: |
+            src-tauri/target/**/bundle/appimage/*.AppImage
+            src-tauri/target/**/bundle/deb/*.deb
+            src-tauri/target/**/bundle/nsis/*.exe
+            src-tauri/target/**/bundle/dmg/*.dmg
+
+  draft-release:
+    if: github.event_name == 'push' && github.ref_type == 'tag'
+    needs: build
+    runs-on: ubuntu-22.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          pattern: trolley-*
+          path: installers
+          merge-multiple: true
+      - name: Prepare checksums and draft notes
+        env:
+          RELEASE_TAG: ${{ github.ref_name }}
+          SOURCE_REPOSITORY: ${{ github.repository }}
+        shell: bash
+        run: |
+          find installers -type f \( -name '*.AppImage' -o -name '*.deb' -o -name '*.exe' -o -name '*.dmg' \) -exec mv -t . {} +
+          sha256sum -- *.AppImage *.deb *.exe *.dmg > SHA256SUMS.txt
+          cat > release-notes.md <<'NOTES'
+          Trolley beta for a small group of testers.
+
+          Packages target Linux x64, Windows x64, macOS Apple Silicon, and macOS Intel.
+          Windows packages are unsigned; macOS packages are ad-hoc signed and not notarized.
+          Native acceptance must be confirmed before this draft is published.
+          Back up an existing workspace before testing. Updates are manual.
+
+          Before publishing, replace this paragraph with the actual changes,
+          tested platforms, and known limitations. SHA256SUMS.txt covers the installers.
+          NOTES
+          printf '\nLicense: GNU GPL version 3 or later (GPL-3.0-or-later).\nSource for this release: https://github.com/%s/archive/refs/tags/%s.tar.gz\n' \
+            "$SOURCE_REPOSITORY" "$RELEASE_TAG" >> release-notes.md
+      - name: Create or update an unpublished beta draft
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ github.ref_name }}
+        shell: bash
+        run: |
+          if gh release view "$RELEASE_TAG" --json isDraft > release-state.json; then
+            if ! jq -e '.isDraft == true' release-state.json > /dev/null; then
+              echo "Refusing to overwrite a published release."
+              exit 1
+            fi
+          else
+            gh release create "$RELEASE_TAG" --verify-tag --draft --prerelease \
+              --title "Trolley $RELEASE_TAG beta" --notes-file release-notes.md
+          fi
+          gh release upload "$RELEASE_TAG" --clobber \
+            -- *.AppImage *.deb *.exe *.dmg SHA256SUMS.txt

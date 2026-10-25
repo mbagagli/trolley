@@ -1,0 +1,36 @@
+{
+  "glib": {
+    "version": "0.18.5",
+    "sha256": "6bc2bc1b4545180431ce5783cf24b471f5fb1476d803ef0b2780d55fa62fe0cc",
+    "advisories": [
+      "RUSTSEC-2024-0429",
+      "GHSA-wrw7-89jp-8q8g"
+    ]
+  },
+  "maintenance": [
+    {
+      "name": "proc-macro-error",
+      "version": "1.0.4",
+      "advisory": "RUSTSEC-2024-0370",
+      "reviewBy": "2027-01-07"
+    },
+    {
+      "name": "zbus_names",
+      "version": "4.3.4",
+      "advisory": "RUSTSEC-2026-0371",
+      "reviewBy": "2027-01-07"
+    },
+    {
+      "name": "zvariant",
+      "version": "5.15.0",
+      "advisory": "RUSTSEC-2026-0370",
+      "reviewBy": "2027-01-07"
+    },
+    {
+      "name": "zvariant_derive",
+      "version": "5.15.0",
+      "advisory": "RUSTSEC-2026-0372",
+      "reviewBy": "2027-01-07"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+GOAL.md
+AUDIT.md
+ROADMAP.md
+DESIGN.md
+MANUAL_QA.md
+PRODUCT.md
+#
+node_modules/
+dist/
+src-tauri/target/
+src-tauri/gen/
+*.tsbuildinfo
+.impeccable/questions/
+.impeccable/review/
+.impeccable/mocks/
+.impeccable/surfaces/
+*.log
+.DS_Store
+dist-site/
+
+# Environment files; keep shareable templates available.
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Local workspaces, SQLite sidecars, and signing credentials.
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.db
+*.db-wal
+*.db-shm
+*.db-journal
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Local agent state and temporary verification output.
+/.agents/
+/.codex/
+coverage/
+playwright-report/
+test-results/
+
+# Editor temporary files and Windows filesystem metadata.
+.idea/
+*.swp
+*.swo
+*~
+Thumbs.db
+Desktop.ini

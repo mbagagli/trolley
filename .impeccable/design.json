@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-06T18:45:01+02:00",
+  "title": "Design System: Trolley",
+  "extensions": {
+    "colorMeta": {
+      "light-ground": {"role": "neutral", "displayName": "Light Chalk Ground", "tonalRamp": ["oklch(0.15 0.009 84.6)", "oklch(0.25 0.009 84.6)", "oklch(0.35 0.009 84.6)", "oklch(0.45 0.009 84.6)", "oklch(0.55 0.009 84.6)", "oklch(0.65 0.009 84.6)", "oklch(0.80 0.009 84.6)", "oklch(0.95 0.009 84.6)"]},
+      "light-raised": {"role": "neutral", "displayName": "Light Paper", "tonalRamp": ["oklch(0.15 0.007 80.7)", "oklch(0.25 0.007 80.7)", "oklch(0.35 0.007 80.7)", "oklch(0.45 0.007 80.7)", "oklch(0.55 0.007 80.7)", "oklch(0.65 0.007 80.7)", "oklch(0.80 0.007 80.7)", "oklch(0.95 0.007 80.7)"]},
+      "light-sunken": {"role": "neutral", "displayName": "Light Sunken Paper", "tonalRamp": ["oklch(0.15 0.012 79.8)", "oklch(0.25 0.012 79.8)", "oklch(0.35 0.012 79.8)", "oklch(0.45 0.012 79.8)", "oklch(0.55 0.012 79.8)", "oklch(0.65 0.012 79.8)", "oklch(0.80 0.012 79.8)", "oklch(0.95 0.012 79.8)"]},
+      "light-rail": {"role": "neutral", "displayName": "Light Ink Rail", "tonalRamp": ["oklch(0.15 0.003 67.7)", "oklch(0.25 0.003 67.7)", "oklch(0.35 0.003 67.7)", "oklch(0.45 0.003 67.7)", "oklch(0.55 0.003 67.7)", "oklch(0.65 0.003 67.7)", "oklch(0.80 0.003 67.7)", "oklch(0.95 0.003 67.7)"]},
+      "light-muted": {"role": "neutral", "displayName": "Light Muted Ink", "tonalRamp": ["oklch(0.15 0.011 78.2)", "oklch(0.25 0.011 78.2)", "oklch(0.35 0.011 78.2)", "oklch(0.45 0.011 78.2)", "oklch(0.55 0.011 78.2)", "oklch(0.65 0.011 78.2)", "oklch(0.80 0.011 78.2)", "oklch(0.95 0.011 78.2)"]},
+      "light-line-soft": {"role": "neutral", "displayName": "Light Soft Seam", "tonalRamp": ["oklch(0.15 0.012 79.8)", "oklch(0.25 0.012 79.8)", "oklch(0.35 0.012 79.8)", "oklch(0.45 0.012 79.8)", "oklch(0.55 0.012 79.8)", "oklch(0.65 0.012 79.8)", "oklch(0.80 0.012 79.8)", "oklch(0.95 0.012 79.8)"]},
+      "light-line-strong": {"role": "neutral", "displayName": "Light Strong Seam", "tonalRamp": ["oklch(0.15 0.015 78.2)", "oklch(0.25 0.015 78.2)", "oklch(0.35 0.015 78.2)", "oklch(0.45 0.015 78.2)", "oklch(0.55 0.015 78.2)", "oklch(0.65 0.015 78.2)", "oklch(0.80 0.015 78.2)", "oklch(0.95 0.015 78.2)"]},
+      "light-coral": {"role": "primary", "displayName": "Trolley Coral", "tonalRamp": ["oklch(0.15 0.149 35.9)", "oklch(0.25 0.149 35.9)", "oklch(0.35 0.149 35.9)", "oklch(0.45 0.149 35.9)", "oklch(0.55 0.149 35.9)", "oklch(0.65 0.149 35.9)", "oklch(0.80 0.149 35.9)", "oklch(0.95 0.149 35.9)"]},
+      "light-coral-hover": {"role": "primary", "displayName": "Trolley Coral Hover", "tonalRamp": ["oklch(0.15 0.145 34.0)", "oklch(0.25 0.145 34.0)", "oklch(0.35 0.145 34.0)", "oklch(0.45 0.145 34.0)", "oklch(0.55 0.145 34.0)", "oklch(0.65 0.145 34.0)", "oklch(0.80 0.145 34.0)", "oklch(0.95 0.145 34.0)"]},
+      "light-sand-gold": {"role": "secondary", "displayName": "Sand Gold", "tonalRamp": ["oklch(0.15 0.090 72.3)", "oklch(0.25 0.090 72.3)", "oklch(0.35 0.090 72.3)", "oklch(0.45 0.090 72.3)", "oklch(0.55 0.090 72.3)", "oklch(0.65 0.090 72.3)", "oklch(0.80 0.090 72.3)", "oklch(0.95 0.090 72.3)"]},
+      "light-forest": {"role": "tertiary", "displayName": "Functional Forest", "tonalRamp": ["oklch(0.15 0.043 161.2)", "oklch(0.25 0.043 161.2)", "oklch(0.35 0.043 161.2)", "oklch(0.45 0.043 161.2)", "oklch(0.55 0.043 161.2)", "oklch(0.65 0.043 161.2)", "oklch(0.80 0.043 161.2)", "oklch(0.95 0.043 161.2)"]},
+      "light-teal": {"role": "tertiary", "displayName": "Functional Teal", "tonalRamp": ["oklch(0.15 0.033 188.2)", "oklch(0.25 0.033 188.2)", "oklch(0.35 0.033 188.2)", "oklch(0.45 0.033 188.2)", "oklch(0.55 0.033 188.2)", "oklch(0.65 0.033 188.2)", "oklch(0.80 0.033 188.2)", "oklch(0.95 0.033 188.2)"]},
+      "light-plum": {"role": "tertiary", "displayName": "Functional Plum", "tonalRamp": ["oklch(0.15 0.021 323.1)", "oklch(0.25 0.021 323.1)", "oklch(0.35 0.021 323.1)", "oklch(0.45 0.021 323.1)", "oklch(0.55 0.021 323.1)", "oklch(0.65 0.021 323.1)", "oklch(0.80 0.021 323.1)", "oklch(0.95 0.021 323.1)"]},
+      "light-danger": {"role": "tertiary", "displayName": "Functional Danger", "tonalRamp": ["oklch(0.15 0.137 26.8)", "oklch(0.25 0.137 26.8)", "oklch(0.35 0.137 26.8)", "oklch(0.45 0.137 26.8)", "oklch(0.55 0.137 26.8)", "oklch(0.65 0.137 26.8)", "oklch(0.80 0.137 26.8)", "oklch(0.95 0.137 26.8)"]},
+      "light-focus": {"role": "primary", "displayName": "Light Focus Coral", "tonalRamp": ["oklch(0.15 0.137 33.5)", "oklch(0.25 0.137 33.5)", "oklch(0.35 0.137 33.5)", "oklch(0.45 0.137 33.5)", "oklch(0.55 0.137 33.5)", "oklch(0.65 0.137 33.5)", "oklch(0.80 0.137 33.5)", "oklch(0.95 0.137 33.5)"]},
+      "scrollbar": {"role": "neutral", "displayName": "Accessible Scrollbar", "tonalRamp": ["oklch(0.15 0.011 78.2)", "oklch(0.25 0.011 78.2)", "oklch(0.35 0.011 78.2)", "oklch(0.45 0.011 78.2)", "oklch(0.55 0.011 78.2)", "oklch(0.65 0.011 78.2)", "oklch(0.80 0.011 78.2)", "oklch(0.95 0.011 78.2)"]},
+      "dark-ground": {"role": "neutral", "displayName": "Dark Ink Ground", "tonalRamp": ["oklch(0.15 0.004 84.6)", "oklch(0.25 0.004 84.6)", "oklch(0.35 0.004 84.6)", "oklch(0.45 0.004 84.6)", "oklch(0.55 0.004 84.6)", "oklch(0.65 0.004 84.6)", "oklch(0.80 0.004 84.6)", "oklch(0.95 0.004 84.6)"]},
+      "dark-raised": {"role": "neutral", "displayName": "Dark Raised Ink", "tonalRamp": ["oklch(0.15 0.006 56.1)", "oklch(0.25 0.006 56.1)", "oklch(0.35 0.006 56.1)", "oklch(0.45 0.006 56.1)", "oklch(0.55 0.006 56.1)", "oklch(0.65 0.006 56.1)", "oklch(0.80 0.006 56.1)", "oklch(0.95 0.006 56.1)"]},
+      "dark-sunken": {"role": "neutral", "displayName": "Dark Sunken Ink", "tonalRamp": ["oklch(0.15 0.005 67.6)", "oklch(0.25 0.005 67.6)", "oklch(0.35 0.005 67.6)", "oklch(0.45 0.005 67.6)", "oklch(0.55 0.005 67.6)", "oklch(0.65 0.005 67.6)", "oklch(0.80 0.005 67.6)", "oklch(0.95 0.005 67.6)"]},
+      "dark-ink": {"role": "neutral", "displayName": "Dark Chalk Type", "tonalRamp": ["oklch(0.15 0.009 84.6)", "oklch(0.25 0.009 84.6)", "oklch(0.35 0.009 84.6)", "oklch(0.45 0.009 84.6)", "oklch(0.55 0.009 84.6)", "oklch(0.65 0.009 84.6)", "oklch(0.80 0.009 84.6)", "oklch(0.95 0.009 84.6)"]},
+      "dark-muted": {"role": "neutral", "displayName": "Dark Muted Chalk", "tonalRamp": ["oklch(0.15 0.015 78.2)", "oklch(0.25 0.015 78.2)", "oklch(0.35 0.015 78.2)", "oklch(0.45 0.015 78.2)", "oklch(0.55 0.015 78.2)", "oklch(0.65 0.015 78.2)", "oklch(0.80 0.015 78.2)", "oklch(0.95 0.015 78.2)"]},
+      "dark-line-soft": {"role": "neutral", "displayName": "Dark Soft Seam", "tonalRamp": ["oklch(0.15 0.009 67.5)", "oklch(0.25 0.009 67.5)", "oklch(0.35 0.009 67.5)", "oklch(0.45 0.009 67.5)", "oklch(0.55 0.009 67.5)", "oklch(0.65 0.009 67.5)", "oklch(0.80 0.009 67.5)", "oklch(0.95 0.009 67.5)"]},
+      "dark-line-strong": {"role": "neutral", "displayName": "Dark Strong Seam", "tonalRamp": ["oklch(0.15 0.011 78.2)", "oklch(0.25 0.011 78.2)", "oklch(0.35 0.011 78.2)", "oklch(0.45 0.011 78.2)", "oklch(0.55 0.011 78.2)", "oklch(0.65 0.011 78.2)", "oklch(0.80 0.011 78.2)", "oklch(0.95 0.011 78.2)"]},
+      "dark-coral": {"role": "primary", "displayName": "Dark Trolley Coral", "tonalRamp": ["oklch(0.15 0.142 36.8)", "oklch(0.25 0.142 36.8)", "oklch(0.35 0.142 36.8)", "oklch(0.45 0.142 36.8)", "oklch(0.55 0.142 36.8)", "oklch(0.65 0.142 36.8)", "oklch(0.80 0.142 36.8)", "oklch(0.95 0.142 36.8)"]},
+      "dark-coral-hover": {"role": "primary", "displayName": "Dark Trolley Coral Hover", "tonalRamp": ["oklch(0.15 0.124 37.6)", "oklch(0.25 0.124 37.6)", "oklch(0.35 0.124 37.6)", "oklch(0.45 0.124 37.6)", "oklch(0.55 0.124 37.6)", "oklch(0.65 0.124 37.6)", "oklch(0.80 0.124 37.6)", "oklch(0.95 0.124 37.6)"]},
+      "dark-sand-gold": {"role": "secondary", "displayName": "Dark Sand Gold", "tonalRamp": ["oklch(0.15 0.102 77.9)", "oklch(0.25 0.102 77.9)", "oklch(0.35 0.102 77.9)", "oklch(0.45 0.102 77.9)", "oklch(0.55 0.102 77.9)", "oklch(0.65 0.102 77.9)", "oklch(0.80 0.102 77.9)", "oklch(0.95 0.102 77.9)"]},
+      "dark-forest": {"role": "tertiary", "displayName": "Dark Functional Forest", "tonalRamp": ["oklch(0.15 0.051 159.5)", "oklch(0.25 0.051 159.5)", "oklch(0.35 0.051 159.5)", "oklch(0.45 0.051 159.5)", "oklch(0.55 0.051 159.5)", "oklch(0.65 0.051 159.5)", "oklch(0.80 0.051 159.5)", "oklch(0.95 0.051 159.5)"]},
+      "dark-teal": {"role": "tertiary", "displayName": "Dark Functional Teal", "tonalRamp": ["oklch(0.15 0.034 186.9)", "oklch(0.25 0.034 186.9)", "oklch(0.35 0.034 186.9)", "oklch(0.45 0.034 186.9)", "oklch(0.55 0.034 186.9)", "oklch(0.65 0.034 186.9)", "oklch(0.80 0.034 186.9)", "oklch(0.95 0.034 186.9)"]},
+      "dark-plum": {"role": "tertiary", "displayName": "Dark Functional Plum", "tonalRamp": ["oklch(0.15 0.034 330.5)", "oklch(0.25 0.034 330.5)", "oklch(0.35 0.034 330.5)", "oklch(0.45 0.034 330.5)", "oklch(0.55 0.034 330.5)", "oklch(0.65 0.034 330.5)", "oklch(0.80 0.034 330.5)", "oklch(0.95 0.034 330.5)"]},
+      "dark-danger": {"role": "tertiary", "displayName": "Dark Functional Danger", "tonalRamp": ["oklch(0.15 0.115 27.3)", "oklch(0.25 0.115 27.3)", "oklch(0.35 0.115 27.3)", "oklch(0.45 0.115 27.3)", "oklch(0.55 0.115 27.3)", "oklch(0.65 0.115 27.3)", "oklch(0.80 0.115 27.3)", "oklch(0.95 0.115 27.3)"]},
+      "dark-focus": {"role": "primary", "displayName": "Dark Focus Coral", "tonalRamp": ["oklch(0.15 0.142 36.8)", "oklch(0.25 0.142 36.8)", "oklch(0.35 0.142 36.8)", "oklch(0.45 0.142 36.8)", "oklch(0.55 0.142 36.8)", "oklch(0.65 0.142 36.8)", "oklch(0.80 0.142 36.8)", "oklch(0.95 0.142 36.8)"]}
+    },
+    "typographyMeta": {
+      "display": {"displayName": "Display", "purpose": "Dashboard introduction only."},
+      "headline": {"displayName": "Headline", "purpose": "Editable task titles and record headings."},
+      "title": {"displayName": "Title", "purpose": "Project and section titles."},
+      "body": {"displayName": "Body", "purpose": "Descriptions, editor copy, and supporting prose."},
+      "control": {"displayName": "Control", "purpose": "Primary and secondary action labels."},
+      "label": {"displayName": "Label", "purpose": "Metadata, chips, fields, and dense controls."}
+    },
+    "shadows": [
+      {"name": "floating-light", "value": "0 16px 44px rgba(25, 24, 23, 0.2)", "purpose": "Menus, dialogs, toasts, and temporary action rails."},
+      {"name": "floating-dark", "value": "0 18px 48px rgba(0, 0, 0, 0.38)", "purpose": "Dark-theme floating overlays."},
+      {"name": "drawer-light", "value": "-14px 0 38px rgba(25, 24, 23, 0.18)", "purpose": "Light-theme panels entering from the right."},
+      {"name": "drawer-dark", "value": "-14px 0 38px rgba(0, 0, 0, 0.32)", "purpose": "Dark-theme panels entering from the right."},
+      {"name": "task-lift", "value": "0 8px 20px rgba(25, 24, 23, 0.12)", "purpose": "Task hover and selected states only."}
+    ],
+    "motion": [
+      {"name": "duration-fast", "value": "140ms", "purpose": "Hover, focus, and small state feedback."},
+      {"name": "duration-base", "value": "220ms", "purpose": "Rail, drawer, and structural changes."},
+      {"name": "ease-out", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Default control and structural easing."},
+      {"name": "reduced-motion", "value": "0.01ms, one iteration", "purpose": "Global reduced-motion override."}
+    ],
+    "breakpoints": [
+      {"name": "rail-collapse", "value": "70rem"},
+      {"name": "narrow-workspace", "value": "52rem"},
+      {"name": "verified-narrow-window", "value": "800px x 650px"}
+    ]
+  },
+  "components": [
+    {
+      "name": "Trolley Brand Lockup",
+      "kind": "custom",
+      "refersTo": "brand-mark",
+      "description": "The supplied three-stroke mark with its Manrope wordmark.",
+      "html": "<span class=\"ds-brand-logo\"><svg class=\"ds-brand-symbol\" aria-hidden=\"true\" viewBox=\"0 0 256 160\"><path d=\"M9 22h56l29 115M86 33h54l30 112M165 43h53l29 110\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"10\"/><rect fill=\"currentColor\" height=\"19\" rx=\"3.5\" width=\"20\" x=\"105\" y=\"59\"/></svg><span class=\"ds-brand-wordmark\">Trolley</span></span>",
+      "css": ".ds-brand-logo { display: inline-flex; align-items: center; gap: 0.75rem; color: var(--text-primary); font-family: \"Manrope Variable\", \"Segoe UI\", sans-serif; } .ds-brand-symbol { width: 3.1rem; height: 1.95rem; overflow: visible; } .ds-brand-wordmark { font-size: 1.34rem; font-weight: 800; letter-spacing: -0.04em; }"
+    },
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Coral action with dark ink for the next consequential step.",
+      "html": "<button class=\"ds-btn-primary\">Add task</button>",
+      "css": ".ds-btn-primary { min-height: 2.45rem; border: 0; border-radius: var(--radius-control); background: var(--accent-solid); color: var(--text-on-accent); padding: 0 var(--space-4); font-family: \"Manrope Variable\", \"Segoe UI\", sans-serif; font-size: 0.83rem; font-weight: 720; transition: background var(--duration-fast) var(--ease-out), transform var(--duration-fast) var(--ease-out); } .ds-btn-primary:hover { background: color-mix(in srgb, var(--accent-solid) 84%, black); transform: translateY(-1px); } .ds-btn-primary:focus-visible { outline: 3px solid color-mix(in srgb, var(--focus) 72%, transparent); outline-offset: 2px; } .ds-btn-primary:active { transform: translateY(0); }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Raised supporting action with a quiet seam.",
+      "html": "<button class=\"ds-btn-secondary\">Cancel</button>",
+      "css": ".ds-btn-secondary { min-height: 2.45rem; border: 1px solid var(--line-soft); border-radius: var(--radius-control); background: var(--surface-raised); color: var(--text-primary); padding: 0 var(--space-4); font-family: \"Manrope Variable\", \"Segoe UI\", sans-serif; font-size: 0.83rem; font-weight: 720; transition: background var(--duration-fast) var(--ease-out); } .ds-btn-secondary:hover { background: var(--surface-sunken); } .ds-btn-secondary:focus-visible { outline: 3px solid color-mix(in srgb, var(--focus) 72%, transparent); outline-offset: 2px; }"
+    },
+    {
+      "name": "Project Search",
+      "kind": "input",
+      "refersTo": "input-project-search",
+      "description": "In-flow search field with a full-contrast placeholder.",
+      "html": "<label class=\"ds-project-search\"><svg aria-hidden=\"true\" viewBox=\"0 0 24 24\"><circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"m20 20-3.2-3.2\"/></svg><input aria-label=\"Search this project\" placeholder=\"Search this project\" type=\"search\"/></label>",
+      "css": ".ds-project-search { height: 2.5rem; display: flex; align-items: center; gap: 0.5rem; border: 1px solid var(--line-soft); border-radius: var(--radius-control); background: var(--surface-ground); color: var(--text-secondary); padding: 0 0.75rem; font-family: \"Manrope Variable\", \"Segoe UI\", sans-serif; } .ds-project-search svg { width: 1rem; fill: none; stroke: currentColor; stroke-width: 2; } .ds-project-search input { min-width: 0; flex: 1; border: 0; outline: 0; background: transparent; color: var(--text-primary); font: inherit; } .ds-project-search input::placeholder { color: var(--text-secondary); opacity: 1; } .ds-project-search:focus-within { outline: 3px solid color-mix(in srgb, var(--focus) 72%, transparent); outline-offset: 2px; }"
+    },
+    {
+      "name": "View Navigation",
+      "kind": "nav",
+      "refersTo": "nav-view",
+      "description": "Four-view navigation with a coral active underline.",
+      "html": "<nav class=\"ds-view-nav\" aria-label=\"Planning views\"><button aria-current=\"page\">Board</button><button>Timeline</button><button>Matrix</button><button>List</button></nav>",
+      "css": ".ds-view-nav { height: 3.5rem; display: flex; gap: 0.25rem; border-bottom: 1px solid var(--line-soft); background: var(--surface-raised); font-family: \"Manrope Variable\", \"Segoe UI\", sans-serif; } .ds-view-nav button { border: 0; border-bottom: 2px solid transparent; background: transparent; color: var(--text-secondary); padding: 0 0.75rem; font: inherit; font-size: 0.76rem; font-weight: 660; } .ds-view-nav button:hover { color: var(--text-primary); } .ds-view-nav button[aria-current=\"page\"] { border-bottom-color: var(--accent-solid); color: var(--text-primary); } .ds-view-nav button:focus-visible { outline: 3px solid color-mix(in srgb, var(--focus) 72%, transparent); outline-offset: -3px; }"
+    },
+    {
+      "name": "Filter Chip",
+      "kind": "chip",
+      "refersTo": "chip-filter",
+      "description": "Compact filter pill with explicit active styling.",
+      "html": "<button class=\"ds-filter-chip\" aria-pressed=\"true\">Due soon <span>3</span></button>",
+      "css": ".ds-filter-chip { min-height: 2rem; display: inline-flex; align-items: center; gap: 0.25rem; border: 1px solid var(--line-strong); border-radius: 999px; background: var(--surface-sunken); color: var(--text-primary); padding: 0 0.75rem; font-family: \"Manrope Variable\", \"Segoe UI\", sans-serif; font-size: 0.72rem; } .ds-filter-chip span { min-width: 1.1rem; border-radius: 999px; background: var(--accent-solid); color: var(--text-on-accent); font-size: 0.7rem; text-align: center; } .ds-filter-chip:hover { border-color: var(--text-secondary); } .ds-filter-chip:focus-visible { outline: 3px solid color-mix(in srgb, var(--focus) 72%, transparent); outline-offset: 2px; }"
+    },
+    {
+      "name": "Task Card",
+      "kind": "card",
+      "refersTo": "card-task",
+      "description": "Stable task identity with labeled metadata, counts, and progress.",
+      "html": "<article class=\"ds-task-card\"><span class=\"ds-task-notch\"></span><button class=\"ds-task-open\"><strong>Confirm planting schedule</strong><small>Due Apr 18 - 2/3 sub-tasks</small></button><span class=\"ds-task-progress\"><i></i></span></article>",
+      "css": ".ds-task-card { position: relative; width: 16rem; border: 1px solid var(--line-soft); border-radius: var(--radius-md); background: var(--surface-raised); color: var(--text-primary); padding: 0.75rem; font-family: \"Manrope Variable\", \"Segoe UI\", sans-serif; transition: transform var(--duration-fast) var(--ease-out), box-shadow var(--duration-fast) var(--ease-out); } .ds-task-card:hover { box-shadow: 0 8px 20px rgba(25, 24, 23, 0.12); transform: translateY(-2px); } .ds-task-notch { position: absolute; top: 0.68rem; right: -1px; width: 0.34rem; height: 1.2rem; border-radius: 0.2rem 0 0 0.2rem; background: var(--line-strong); } .ds-task-open { display: grid; gap: 0.5rem; border: 0; background: transparent; color: inherit; text-align: left; } .ds-task-open strong { font-size: 0.82rem; line-height: 1.38; } .ds-task-open small { color: var(--text-secondary); font-size: 0.7rem; } .ds-task-open:focus-visible { outline: 3px solid color-mix(in srgb, var(--focus) 72%, transparent); outline-offset: 2px; } .ds-task-progress { height: 0.22rem; display: block; overflow: hidden; margin-top: 0.75rem; border-radius: 999px; background: var(--surface-sunken); } .ds-task-progress i { width: 62%; height: 100%; display: block; background: var(--forest-500); }"
+    },
+    {
+      "name": "Kanban Lane",
+      "kind": "custom",
+      "refersTo": "container-kanban-lane",
+      "description": "Tonal lane with high-contrast colored controls.",
+      "html": "<section class=\"ds-kanban-lane\"><header><span class=\"ds-column-icon\">3</span><strong>In progress</strong><small>3 tasks</small></header><button class=\"ds-quick-add\">+ Add task</button></section>",
+      "css": ".ds-kanban-lane { --ds-column-color: var(--accent-solid); width: 18rem; border: 1px solid var(--line-soft); border-radius: var(--radius-lg); background: color-mix(in srgb, var(--ds-column-color) 6%, var(--surface-sunken)); color: var(--text-primary); font-family: \"Manrope Variable\", \"Segoe UI\", sans-serif; padding: 0.75rem; } .ds-kanban-lane header { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 0.5rem; } .ds-kanban-lane header strong { font-size: 0.81rem; } .ds-kanban-lane header small { color: var(--text-secondary); font-size: 0.7rem; } .ds-column-icon, .ds-quick-add { border: 1px solid color-mix(in srgb, var(--ds-column-color) 54%, var(--line-strong)); background: color-mix(in srgb, var(--ds-column-color) 22%, var(--surface-raised)); color: var(--text-primary); } .ds-column-icon { width: 1.9rem; height: 1.9rem; display: grid; place-items: center; border-radius: 0.5rem; font-size: 0.7rem; } .ds-quick-add { width: 100%; min-height: 2.25rem; margin-top: 0.75rem; border-radius: var(--radius-control); font: inherit; font-size: 0.72rem; } .ds-quick-add:hover { background: color-mix(in srgb, var(--ds-column-color) 30%, var(--surface-raised)); } .ds-quick-add:focus-visible { outline: 3px solid color-mix(in srgb, var(--focus) 72%, transparent); outline-offset: 2px; }"
+    },
+    {
+      "name": "List Reorder Feedback",
+      "kind": "custom",
+      "refersTo": "row-list-reorder",
+      "description": "Stable source placeholder, destination line, and drag summary.",
+      "html": "<div class=\"ds-list-move\"><div class=\"ds-list-row ds-list-placeholder\"><button aria-label=\"Move Compare compost suppliers\" class=\"ds-list-handle\"><svg aria-hidden=\"true\" viewBox=\"0 0 24 24\"><path d=\"M9 5h.01M9 12h.01M9 19h.01M15 5h.01M15 12h.01M15 19h.01\"/></svg></button><span><strong>Compare compost suppliers</strong><small>Backlog - 0%</small></span></div><div class=\"ds-list-row ds-list-destination\" role=\"status\">Insert before Opening morning</div><div aria-hidden=\"true\" class=\"ds-list-overlay\"><svg viewBox=\"0 0 24 24\"><path d=\"M9 5h.01M9 12h.01M9 19h.01M15 5h.01M15 12h.01M15 19h.01\"/></svg><span><strong>Compare compost suppliers</strong><small>Move to Ready</small></span><b>0%</b></div></div>",
+      "css": ".ds-list-move { width: min(36rem, 100%); display: grid; gap: 0.5rem; font-family: \"Manrope Variable\", \"Segoe UI\", sans-serif; } .ds-list-row, .ds-list-overlay { min-height: 3.6rem; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 0.75rem; color: var(--text-primary); padding: 0.75rem; } .ds-list-row { border: 1px solid var(--line-soft); background: var(--surface-raised); } .ds-list-placeholder { opacity: 0.3; transform: none; background: var(--surface-sunken); } .ds-list-destination { background: color-mix(in srgb, var(--terracotta-500) 8%, transparent); box-shadow: inset 0 2px 0 var(--terracotta-500); font-size: 0.7rem; } .ds-list-overlay { border: 1px solid var(--line-strong); border-radius: var(--radius-md); background: var(--surface-raised); box-shadow: var(--shadow-float); cursor: grabbing; } .ds-list-overlay > span { display: grid; gap: 0.25rem; } .ds-list-overlay strong { font-size: 0.78rem; } .ds-list-overlay small, .ds-list-overlay b, .ds-list-row small { color: var(--text-secondary); font-size: 0.7rem; } .ds-list-handle { width: 1.65rem; height: 1.65rem; display: grid; place-items: center; border: 0; border-radius: var(--radius-sm); background: transparent; color: var(--text-secondary); cursor: grab; } .ds-list-handle svg, .ds-list-overlay > svg { width: 1rem; height: 1rem; fill: none; stroke: currentColor; stroke-width: 2.5; stroke-linecap: round; } .ds-list-handle:hover { background: var(--surface-sunken); color: var(--text-primary); } .ds-list-handle:focus-visible { outline: 3px solid color-mix(in srgb, var(--focus) 72%, transparent); outline-offset: 2px; } .ds-list-handle:active { cursor: grabbing; }"
+    },
+    {
+      "name": "Ordered Sub-task Row",
+      "kind": "custom",
+      "refersTo": "row-subtask",
+      "description": "Editable ordered step with aggregate parent-owned progress.",
+      "html": "<section class=\"ds-subtask-set\"><header><strong>Sub-tasks</strong><span>2 of 3 complete</span></header><div aria-label=\"67% of sub-tasks complete\" class=\"ds-subtask-progress\" role=\"progressbar\"><i></i></div><ol><li><button aria-label=\"Move sub-task: Confirm water access\" class=\"ds-subtask-handle\"><svg aria-hidden=\"true\" viewBox=\"0 0 24 24\"><path d=\"M9 5h.01M9 12h.01M9 19h.01M15 5h.01M15 12h.01M15 19h.01\"/></svg></button><input aria-label=\"Reopen sub-task: Confirm water access\" checked type=\"checkbox\"><input aria-label=\"Sub-task description: Confirm water access\" class=\"ds-subtask-description\" value=\"Confirm water access\"><button aria-label=\"Delete sub-task: Confirm water access\" class=\"ds-subtask-delete\">x</button></li></ol><p>Progress and completion follow sub-tasks.</p></section>",
+      "css": ".ds-subtask-set { width: min(26rem, 100%); color: var(--text-primary); font-family: \"Manrope Variable\", \"Segoe UI\", sans-serif; } .ds-subtask-set header { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; } .ds-subtask-set header strong { font-size: 0.78rem; } .ds-subtask-set header span, .ds-subtask-set p { color: var(--text-secondary); font-size: 0.7rem; } .ds-subtask-progress { height: 0.24rem; overflow: hidden; margin: 0.5rem 0 0.75rem; border-radius: 999px; background: var(--surface-sunken); } .ds-subtask-progress i { width: 100%; height: 100%; display: block; border-radius: inherit; background: var(--forest-500); transform: scaleX(0.67); transform-origin: left; } .ds-subtask-set ol { display: grid; gap: 0.5rem; margin: 0; padding: 0; list-style: none; } .ds-subtask-set li { min-height: 2.3rem; display: grid; grid-template-columns: auto auto minmax(0, 1fr) auto; align-items: center; gap: 0.5rem; border-bottom: 1px solid var(--line-soft); padding: 0.25rem 0; font-size: 0.69rem; } .ds-subtask-handle { width: 1.65rem; height: 1.65rem; display: grid; place-items: center; border: 0; border-radius: var(--radius-sm); background: transparent; color: var(--text-secondary); cursor: grab; } .ds-subtask-handle svg { width: 0.9rem; height: 0.9rem; fill: none; stroke: currentColor; stroke-width: 2.5; stroke-linecap: round; } .ds-subtask-set input[type=checkbox] { accent-color: var(--terracotta-500); } .ds-subtask-description { width: 100%; min-width: 0; border: 1px solid transparent; border-radius: var(--radius-control); background: transparent; color: var(--text-primary); padding: 0.38rem 0.25rem; font: inherit; } .ds-subtask-description:hover { border-color: var(--line-soft); background: var(--surface-sunken); } .ds-subtask-description:focus-visible { border-color: var(--line-strong); outline: 3px solid color-mix(in srgb, var(--focus) 72%, transparent); background: var(--surface-raised); } .ds-subtask-handle:hover { background: var(--surface-sunken); color: var(--text-primary); } .ds-subtask-handle:focus-visible { outline: 3px solid color-mix(in srgb, var(--focus) 72%, transparent); outline-offset: 2px; } .ds-subtask-handle:active { cursor: grabbing; } .ds-subtask-delete { width: 1.75rem; height: 1.75rem; border: 0; border-radius: var(--radius-sm); background: transparent; color: var(--text-secondary); } .ds-subtask-delete:hover { background: color-mix(in srgb, var(--danger-500) 12%, transparent); color: var(--danger-500); } .ds-subtask-delete:focus-visible { outline: 3px solid color-mix(in srgb, var(--focus) 72%, transparent); outline-offset: 2px; } .ds-subtask-set p { margin: 0.75rem 0 0; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Warm Planning Workbench",
+    "overview": "Trolley is a calm, capable desktop workbench for planning the same task from four useful perspectives. Its identity combines the supplied three-stroke mark, locally bundled Manrope Variable, warm chalk and ink neutrals, clear coral actions, and restrained sand-gold highlights. Brand expression is precise and quiet because this is an Operate-mode interface built for long working sessions.\n\nThe established architecture remains central: a dark project rail frames one flexible workspace, while Board, Timeline, Matrix, and List present a single canonical task model. Compact information, tonal layering, clear focus, and responsive reflow preserve scanability without turning the product into a field of generic floating cards.",
+    "keyCharacteristics": [
+      "The supplied three-stroke Trolley mark and compact Manrope wordmark.",
+      "Warm chalk and near-black themes with exact, contrast-safe counterparts.",
+      "One task identity and metadata model repeated across four planning views.",
+      "Coral for actions, with sand-gold reserved for major highlights.",
+      "Functional status colors reinforced by labels, icons, shape, or position.",
+      "A desktop-first shell that remains reachable in narrow app windows."
+    ],
+    "rules": [
+      {"name": "The Exact Rail Rule", "body": "The rail is `light-rail` in light mode and `dark-ground` in dark mode. Do not tint it toward blue, green, or gray.", "section": "colors"},
+      {"name": "The Gold Rarity Rule", "body": "Use sand-gold only for major highlights and text selection. Its restraint is what makes it meaningful.", "section": "colors"},
+      {"name": "The Redundant Signal Rule", "body": "Status and data colors always accompany a word, number, icon, pattern, progress measure, or stable position; color never carries meaning alone.", "section": "colors"},
+      {"name": "The One Family Rule", "body": "Every type role uses exactly `\"Manrope Variable\", \"Segoe UI\", sans-serif`; hierarchy comes from the variable family's settings.", "section": "typography"},
+      {"name": "The Full-Contrast Placeholder Rule", "body": "Input and textarea placeholders use the theme's secondary text token without an additional opacity reduction.", "section": "typography"},
+      {"name": "The One Record Rule", "body": "Preserve the same title, status, priority, labels, dates, progress, and assignee as a task moves across every view.", "section": "layout"},
+      {"name": "The Search Stays Put Rule", "body": "At narrow widths, search reflows inside the project header and never floats over project identity or header actions.", "section": "layout"},
+      {"name": "The Flat Workbench Rule", "body": "Resting tasks, lanes, tables, and timeline bars use borders and tonal layering. Add a shadow only when state or stacking requires it.", "section": "elevation"},
+      {"name": "The Four Radius Rule", "body": "Choose from `sm`, `control`, `md`, and `lg` unless a true pill, circle, notch, milestone, or native icon tile requires an exception.", "section": "shapes"},
+      {"name": "The Mark Integrity Rule", "body": "Preserve the supplied three-stroke geometry. Use the full lockup where the product can be named, the symbol alone in compact or loading contexts, and the light symbol on the dark native icon tile.", "section": "components"},
+      {"name": "The Sub-task Ownership Rule", "body": "Keep sub-task descriptions editable and their ordered rows movable. When any sub-task exists, its aggregate state owns the parent task's progress and workflow completion state.", "section": "components"},
+      {"name": "The Stable List Move Rule", "body": "Preserve the source row as a placeholder, label the destination in the floating summary, mark insertion without changing table geometry, and leave the completed move visible in manual order.", "section": "components"}
+    ],
+    "dos": [
+      "Do preserve one task identity and metadata order across all four views.",
+      "Do use the supplied logo lockups according to surface and available space.",
+      "Do keep primary actions and gold selections legible with dark ink.",
+      "Do retain explicit placeholder, column-control, and scrollbar contrast.",
+      "Do keep project search in flow and all header actions reachable at narrow widths, including the shipped `800 x 650` window.",
+      "Do support pointer and keyboard task opening, keyboard drag alternatives, visible Matrix drag feedback, named collapsed controls, and reduced motion.",
+      "Do keep List row moves stable with a source placeholder, floating summary, named destination, insertion line, and `0.7rem` status counts.",
+      "Do keep sub-task descriptions editable, their order movable, and parent progress and workflow completion synchronized with checked items."
+    ],
+    "donts": [
+      "Don't replace the shell with a generic floating-card dashboard or a field of unrelated rounded panels.",
+      "Don't use color alone to communicate priority, state, completion, danger, progress, or drag destination.",
+      "Don't use sand-gold as a routine accent or replace coral as the action color.",
+      "Don't introduce another type family or simulate a condensed display face.",
+      "Don't tint the rail away from its exact light and dark anchor values.",
+      "Don't weaken secondary text, placeholders, selection text, column controls, or scrollbars with additional opacity.",
+      "Don't collapse, transform, or remove the source List row while it is being moved; the table geometry must remain stable."
+    ]
+  }
+}

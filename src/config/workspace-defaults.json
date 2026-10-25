@@ -1,0 +1,110 @@
+{
+  "projectSettings": {
+    "terminology": {
+      "projectSingular": "Project",
+      "projectPlural": "Projects",
+      "taskSingular": "Task",
+      "taskPlural": "Tasks"
+    },
+    "priorities": [
+      {
+        "rank": 1,
+        "name": "Planning",
+        "color": "#7b746a",
+        "icon": "CircleDashed"
+      },
+      {
+        "rank": 2,
+        "name": "Low",
+        "color": "#477b78",
+        "icon": "ChevronsDown"
+      },
+      {
+        "rank": 3,
+        "name": "Medium",
+        "color": "#b08235",
+        "icon": "Equal"
+      },
+      {
+        "rank": 4,
+        "name": "High",
+        "color": "#b85f43",
+        "icon": "ChevronsUp"
+      },
+      {
+        "rank": 5,
+        "name": "Critical",
+        "color": "#8c4051",
+        "icon": "Siren"
+      }
+    ],
+    "quadrants": [
+      {
+        "key": "do-first",
+        "name": "Do First",
+        "description": "Urgent and important",
+        "color": "#b85f43",
+        "icon": "Flame"
+      },
+      {
+        "key": "schedule",
+        "name": "Schedule",
+        "description": "Important, not urgent",
+        "color": "#477b78",
+        "icon": "CalendarClock"
+      },
+      {
+        "key": "delegate",
+        "name": "Delegate",
+        "description": "Urgent, not important",
+        "color": "#b08235",
+        "icon": "Send"
+      },
+      {
+        "key": "eliminate",
+        "name": "Eliminate",
+        "description": "Neither urgent nor important",
+        "color": "#756b76",
+        "icon": "ArchiveX"
+      }
+    ],
+    "defaultView": "board",
+    "dateFormat": "MMM d, yyyy",
+    "firstDayOfWeek": 1,
+    "workingDays": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "showWeekends": true,
+    "showCompletedInMatrix": false,
+    "cardFields": [
+      "labels",
+      "priority",
+      "dates",
+      "progress",
+      "checklist",
+      "dependencies",
+      "milestone"
+    ]
+  },
+  "preferences": {
+    "theme": "system",
+    "density": "comfortable",
+    "onboardingComplete": false,
+    "lastProjectId": null
+  },
+  "filter": {
+    "query": "",
+    "columnIds": [],
+    "labelIds": [],
+    "priorities": [],
+    "quadrants": [],
+    "assigneeIds": [],
+    "dueFrom": null,
+    "dueTo": null,
+    "includeCompleted": true
+  }
+}
